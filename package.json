@@ -1,0 +1,19 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch public -e js,html,css",
+    "test": "echo \\\"Error: no test command has been set\\\" && exit 1"
+  },
+  "author": "Ryan'",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "reload": "^3.1.0"
+  }
+}
