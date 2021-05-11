@@ -6,7 +6,6 @@
 
 body {
   background-image: linear-gradient(120deg, #840032, #002642);
-  /* background-image: red; */
   color: white;
   font-family: "Pangolin", cursive;
   min-height: 200vh;
