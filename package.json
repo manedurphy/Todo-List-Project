@@ -1,19 +1,20 @@
 {
-  "name": "to-do-list",
+  "name": "vanilla-js-beginner-todo-list",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch public -e js,html,css",
-    "test": "echo \\\"Error: no test command has been set\\\" && exit 1"
+    "start": "node index.js",
+    "start:dev": "nodemon --watch public -e js,html,css",
+    "docker": "docker build -t todolist . && docker run --rm -p 3000:3000 --name todo todolist",
+    "docker:dev": "docker build -t todolist -f Dockerfile.dev . && docker run --rm -p 3000:3000 --name todo -v $(pwd):/app -v /app/node_modules todolist"
   },
-  "author": "Ryan'",
+  "author": "Dane'",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4",
-    "reload": "^3.1.0"
+    "nodemon": "^2.0.4"
   }
 }
